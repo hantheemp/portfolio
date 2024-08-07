@@ -40,7 +40,7 @@ const Section = (props) => {
 
 export const InterfaceMobile = () => {
   return (
-    <div>
+    <div className="overflow-auto">
       <Section>
         <About></About>
       </Section>

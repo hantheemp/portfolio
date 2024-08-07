@@ -18,18 +18,10 @@ export function Avatar(props) {
   const { nodes, materials } = useGraph(clone);
 
   const { animations: wavingAnimation } = useFBX("animations/Waving.fbx");
-  const { animations: fallingAnimation } = useFBX("animations/Falling.fbx");
-  const { animations: rollingAnimation } = useFBX("animations/Rolling.fbx");
-  const { animations: stretchingAnimation } = useFBX(
-    "animations/Stretching.fbx"
-  );
   const { animations: victoryAnimation } = useFBX("animations/Victory.fbx");
   const { animations: saluteAnimation } = useFBX("animations/Salute.fbx");
 
   wavingAnimation[0].name = "Waving";
-  fallingAnimation[0].name = "Falling";
-  rollingAnimation[0].name = "Rolling";
-  stretchingAnimation[0].name = "Stretching";
   pointingAnimation[0].name = "Pointing";
   victoryAnimation[0].name = "Victory";
   saluteAnimation[0].name = "Salute";
@@ -37,9 +29,6 @@ export function Avatar(props) {
   const { actions } = useAnimations(
     [
       wavingAnimation[0],
-      fallingAnimation[0],
-      rollingAnimation[0],
-      stretchingAnimation[0],
       pointingAnimation[0],
       victoryAnimation[0],
       saluteAnimation[0],
