@@ -39,7 +39,7 @@ const Section = (props) => {
 
 export const Interface = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col overflow-auto">
       <Section>
         <About></About>
       </Section>
