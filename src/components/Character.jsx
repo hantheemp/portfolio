@@ -25,7 +25,7 @@ export const Character = (props) => {
         isMobile={isMobile}
       />
 
-      <ambientLight intensity={1.3}></ambientLight>
+      <ambientLight intensity={1.2}></ambientLight>
     </>
   );
 };
